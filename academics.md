@@ -36,20 +36,20 @@ Publications
 Conferences and visits
 ----------------------
 
-* [13th US National Congress on Computational Mechanics](http://13.usnccm.org/), San Diego, California, July 26 -- 30, 2015.
+* [USNCCM13](http://13.usnccm.org/), San Diego, California, July 26 -- 30, 2015.
 
-* [Conference on Geometric Modeling and Processing (GMP 2015)](http://gmp2015.inf.usi.ch/), 
+* [GMP 2015](http://gmp2015.inf.usi.ch/), 
   Lugano, Switzerland, June 1 -- 3, 2015. 
 
 * Research Visit, UCSD, California, Oct. 27 -- Nov. 7, 2015.
 
-* [SMART Conference](http://smart2014.diism.unisi.it/), Pontignano, Italy, Sept. 28 --
+* [SMART](http://smart2014.diism.unisi.it/), Pontignano, Italy, Sept. 28 --
   Oct. 1, 2014.
 
-* [SiKDD Conference](http://ailab.ijs.si/dunja/SiKDD2013/), Ljubljana, Slovenia, 
+* [SiKDD](http://ailab.ijs.si/dunja/SiKDD2013/), Ljubljana, Slovenia, 
   Oct. 7, 2013. 
 
-* [CGTA Conference](http://conferences2.imfm.si/conferenceDisplay.py?confId=15),
+* [CGTA](http://conferences2.imfm.si/conferenceDisplay.py?confId=15),
   Ljubljana, Slovenia, June 24 -- 28,  2013.
 
 
