@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class="home">
+  
+  <h1 class="page-heading">Posts</h1>
+
+   <ul class="post-list">
+     {% for post in paginator.posts %}
+     <li>
+       <span class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</span>
+       <h2 >
+         <a class="post-linl" href="{{ post.url | prepend: site.baseurl }}">
+           {{ post.title }}</a></h3>
+       <p class="description">{% if post.description %}
+         {{ post.description  | strip_html | strip_newlines | truncate: 250 }}
+         {% else %}
+         {{ post.content | strip_html | strip_newlines | truncate: 250 }}
+         {% endif %}
+       </p>
+     </li>
+     {% endfor %}
+   </ul>
+   
+   <!-- Pagination links -->
+   <div style="float:left">
+     {% if paginator.previous_page %}
+     <a href="{{ site.url }}{{ paginator.previous_page_path }}" 
+        class="previous button__outline">Newer Posts</a>  
+     {% endif %} 
+   </div>
+   <div style="float:right">
+     {% if paginator.next_page %}
+     <a href="{{ site.url }}{{ paginator.next_page_path }}" 
+        class="next button__outline">Older Posts</a>
+     {% endif %}
+   </div>
+   
+   <br />
+   
+  <p class="rss-subscribe">subscribe 
+    <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
+  </p>
+
+</div>
+
+
