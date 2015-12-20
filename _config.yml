@@ -1,11 +1,10 @@
 # Site settings
 permalink: /blog/:year/:month/:title.html
-title: Jaka 
-email: your-email@domain.com
+title: Jaka's Corner
 description: > # this means to ignore newlines until "baseurl:"
   Jaka's Corner
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://jakascorner.com" # the base hostname & protocol for your site
 twitter_username: jakaspeh
 
 # Build settings
