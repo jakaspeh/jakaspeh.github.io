@@ -12,10 +12,26 @@ blog post](/blog/2015/12/hello-concurrent-world.html). The
 `{%raw%}.detach(){%endraw%}` member function is the other option: not waiting
 for the thread to finish.
 
-Therefore, we must choose between these two options when we are using a thread.
-(If we don't detach or join the thread, the program will crash!) The second
-option is not problematic. The `{%raw%}.detach(){%endraw%}` is invoked right
-after the construction of a thread. 
+Therefore, we must choose between these two options.  If we don't detach or join
+the thread, the program will crash! If you don't believe me, comment a
+`{%raw%}.join(){%endraw%}` call in
+[helloWorld.cpp](https://github.com/jakaspeh/concurrency/blob/master/helloWorld.cpp),
+compile and run the program. You should get an error message:
+
+{% highlight bash %}
+...
+terminate called without an active exception
+Aborted (core dumped)
+...
+{% endhighlight %}
+
+Two options
+-----------
+
+Thus, we **must** call either `{%raw%}join{%endraw%}` or
+`{%raw%}detach{%endraw%}`. The second option is not problematic. The
+`{%raw%}.detach(){%endraw%}` is invoked right after the construction of a
+thread.
 
 The first approach, however, has some problems. Invoking the
 `{%raw%}.join(){%endraw%}` right after constructor doesn't make sense, because
@@ -96,6 +112,12 @@ called in any case. When the function ends, the destructors of all objects in
 the scope are called before the program exits. This also happens if the function
 raises an exception and ends prematurely.
 
+Acknowledgment
+--------------
+
+Thanks to **Nino Bašić** for comments and suggestions. Now the post looks more
+organized!
+
 Summary
 -------
 
@@ -103,6 +125,8 @@ We learned why are the plain threads dangerous and how to make them safer with a
 `{%raw%}Guard{%endraw%}` class.
 
 In the next blog post, we will look how to pass an argument to a thread. 
+
+
 
 Links: 
 
