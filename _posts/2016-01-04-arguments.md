@@ -73,7 +73,7 @@ Explanation
 
 The reasoning behind it is that a thread, during a construction, takes a
 function and copies all of the arguments to its internal storage. Then,
-accordingly to the function signature, thread passes arguments to the function
+accordingly to the function signature, thread passes the copies to the function
 by values or references. If the function expects a reference, it
 gets a reference to an internal copy of the object. 
 
