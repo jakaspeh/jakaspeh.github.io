@@ -15,9 +15,10 @@ std::string msg = "Today is a beautiful day.";
 std::thread t(printNTimes, 5, msg);
 {% endhighlight %}
 
-This looks straightforward, but something unexpected happens if you don't have a
-const reference. Let us consider a `{%raw%}referenceArguments.cpp{%endraw%}`
-below
+The code runs `{%raw%}printNTimes{%endraw%}` with arguments `{%raw%}5{%endraw%}`
+and `{%raw%}msg{%endraw%}` in a new thread. But something unexpected happens if
+you don't have a const reference. Let us consider a
+`{%raw%}referenceArguments.cpp{%endraw%}` below
 
 {% highlight c++ %}
 #include <iostream>
