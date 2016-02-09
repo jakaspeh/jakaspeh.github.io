@@ -6,7 +6,7 @@ permalink: /academics/
 My research interests are:
 
 * Applied Geometry 
-* CAG, CAGD
+* CAD, CAGD
 * Isogeometric Analysis
 
 Publications

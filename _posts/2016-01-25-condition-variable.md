@@ -32,7 +32,7 @@ We will put this short story into the code. There are two processes:
 
 * the mother is doing the laundry,
 
-* the sun is playing basketball and outsourcing the laundry to his mother.
+* the son is playing basketball and outsourcing the laundry to his mother.
 
 These two processes will run in separate threads. There is a
 communication/synchronization between them which is done via a condition
