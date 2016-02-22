@@ -64,8 +64,8 @@ arguments `{%raw%}(2.5, true){%endraw%}` and stores the result of the function
 in the future. 
 
 We can pass the packaged task around and call it at a different place than where
-it was created. This is the benefit of decoupling the creation of the future
-with the execution of the task.
+it was created. This is the benefit of packaged tasks: decoupling the creation
+of the future with the execution of the task.
 
 #### *Typical usage* ####
 
@@ -83,7 +83,7 @@ The typical usage of a packaged task is:
 Temperature tomorrow revisited
 ------------------------------
 
-We will use a packaged task on the example from [the previous blog post](/blog/2016/02/futures.html).
+We will use a packaged task on the example from [the previous article](/blog/2016/02/futures.html).
 
 The story was: A couple, wife and husband, are going on a picnic tomorrow. The
 wife would like to know what will be the temperature of the weather. Therefore,
@@ -92,13 +92,13 @@ she asks her husband to look it up.
 The two functions from the last example 
 
 {% highlight c++ %}
-void make_break(int milisec);
+void make_break(int millisec);
 
 int temperature();
 {% endhighlight %}
 
 stay the same. The `{%raw%}make_break(){%endraw%}` stops current thread for
-given amount of miliseconds and the `{%raw%}temperature(){%endraw%}` returns the
+given amount of milliseconds and the `{%raw%}temperature(){%endraw%}` returns the
 temperature, which the husband looked up. The `{%raw%}main{%endraw%}` function
 is different
 
@@ -134,8 +134,8 @@ int main()
 }
 {% endhighlight %}
 
-The interesting part is where the `{%raw%}std::package_task{%endraw%}`
-constructor creates a packaged task with the
+The interesting part is where the constructor of `{%raw%}std::package_task{%endraw%}`
+creates a packaged task with the
 `{%raw%}temperature(){%endraw%}`. Then, the future `{%raw%}answer{%endraw%}` is
 retrieved from the `{%raw%}task{%endraw%}`. Afterwards, we pass the task to a
 separate thread. The packaged task is not copyable, therefore
@@ -145,8 +145,9 @@ computes the result asynchronously.
 If the `{%raw%}temperature{%endraw%}` would have additional input arguments,
 they would be listed in the `{%raw%}std::thread{%endraw%}` constructor. 
 
-The entire source code is available **here [source code TO DO]**. The output of
-the program is:
+The entire source code is available
+[here](https://github.com/jakaspeh/concurrency/blob/master/packagedTask.cpp). The
+output of the program is:
 
 {% highlight bash %}
 $ ./packagedTask
@@ -176,14 +177,14 @@ with a `{%raw%}std::future{%endraw%}` -- the future representation of the result
 of the task.
 
 
-In the next blog post, we will give another example of usage of packaged
+In the next article, we will give another example of usage of packaged
 tasks. It will take advantage of the fact that the execution of the task and the
 retrieval of the future from the packaged task is not so tightly connected as in
 `{%raw%}std::async{%endraw%}`. 
 
 Links:
 
-* **Source code: [TO DO]** 
+* [Source code](https://github.com/jakaspeh/concurrency/blob/master/packagedTask.cpp)
 
 * [std::packaged_task](http://en.cppreference.com/w/cpp/thread/packaged_task)
 
