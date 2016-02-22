@@ -18,8 +18,8 @@ Publications
   [[pdf](https://gs.jku.at/pubs/NFNreport30.pdf)]
 
 * M. Pauley, D. M.  Nguyen, D. Mayer, J. Špeh, O. Weeger, B. J&#252;ttler,  \\
-  The isogeometric segmentation pipeline, \\
-  to apper in Isogeometric Analysis and Applications, LNCS, Springer, 2015. 
+  [The isogeometric segmentation pipeline](http://link.springer.com/chapter/10.1007%2F978-3-319-23315-4_3), \\
+  Isogeometric Analysis and Applications, LNCS, Springer, 2015. 
   [[pdf](https://gs.jku.at/pubs/NFNreport31.pdf)]
 
 * A. Falini, J. Špeh, B. J&#252;ttler,  \\
