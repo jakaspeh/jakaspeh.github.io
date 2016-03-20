@@ -5,9 +5,9 @@ date:   2016-02-01
 categories: concurrency
 ---
 
-Condition variables were the topic of the [previous blog
-post](/blog/2016/01/condition-variable.html). I recommend reading it before
-starting with this blog post.
+Condition variables were the topic of the [previous
+article](/blog/2016/01/condition-variable.html). I recommend reading it before
+starting with this article.
 
 Today, we will see another use case of a condition variable: sharing data
 between the threads.
@@ -142,8 +142,8 @@ void worker()
 The function contains an infinite loop. The second line of the body of the loop
 guarantees that the `{%raw%}TASKS{%endraw%}` queue is not empty. This means that
 the boss already assigned some tasks. We explained the behavior of the
-`{%raw%}wait(){%endraw%}` member function in [the previous blog
-post](/blog/2016/01/condition-variable.html). Check it out if you don't
+`{%raw%}wait(){%endraw%}` member function in [the previous
+article](/blog/2016/01/condition-variable.html). Check it out if you don't
 understand the guarantee.
 
 Afterwards, the function gets and prints a task from the queue. The loop

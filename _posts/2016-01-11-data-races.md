@@ -8,7 +8,7 @@ categories: concurrency
 Data race
 ---------
 
-The problem, which we had in [the last blog post](/blog/2016/01/arguments.html)
+The problem, which we had in [the last article](/blog/2016/01/arguments.html)
 (`{%raw%}arguments.cpp{%endraw%}`), was the messy output of the program. Namely,
 there were two sentences in one line and also some blank lines appeared:
 
@@ -102,7 +102,7 @@ Total number of even numbers is: 5
 Nooo, the results are different! This happens because of a data race. Two threads
 are racing for the `{%raw%}numEven{%endraw%}` and when both are tying to
 increment it at the same time, strange stuff happens and the outcome is
-unpredictable. This is much worse than the example from the previous blog post. 
+unpredictable. This is much worse than the example from the previous article. 
 
 There are several solutions. We could count separately in every thread and then
 sum results together in the main thread. But if we would still like to count with
@@ -156,14 +156,14 @@ In order to use mutexes, we must include them into the program with
 `{%raw%}#include <mutex>{%endraw%}` statement. We declare a global mutex, lock
 it before incrementing and unlock it afterwards. The main function is
 unchanged. This makes our program data race free. For an exercise, you can make
-the `{%raw%}arguments.cpp{%endraw%}` from the previous blog post data race free.
+the `{%raw%}arguments.cpp{%endraw%}` from the previous article data race free.
 
 Usually, we don't use global mutexes, but we group them and the protected
 resource together in a class. This also makes the relation between the mutex and
 the resource more apparent. 
 
 A mutex looks like a very useful tool in concurrent programming. But, it is also
-a source of problems. In the next blog post, we will explore common
+a source of problems. In the next article, we will explore common
 problems associated with mutexes. 
 
 Summary
@@ -172,7 +172,7 @@ Summary
 We defined and explored data races. One possible solution for data races are
 mutexes.
 
-In the next blog post, we will look more deeply into mutexes. 
+In the next article, we will look more deeply into mutexes. 
 
 Links:
 

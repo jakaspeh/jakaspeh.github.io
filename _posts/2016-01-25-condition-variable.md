@@ -25,8 +25,8 @@ Mother and son with the laundry
 There is a family with a mother and a son. The son is playing basketball and he
 is sweating, because he is playing hard. Afterwards, he asks the mother to do
 the laundry for him. She is nice and does it. The son is happy, because he has
-fresh shirt and shorts. (Any connection with the author of this post is merely
-apparent :-).)
+fresh shirt and shorts. (Any connection with the author of this article is
+merely apparent :-).)
 
 We will put this short story into the code. There are two processes:
 

@@ -8,7 +8,7 @@ categories: concurrency
 When we start a thread, there are two options. Either we will wait for the
 thread to finish or we will not wait for it. A mechanism for waiting is 
 a `{%raw%}.join(){%endraw%}` member function. This is what we did in the [first
-blog post](/blog/2015/12/hello-concurrent-world.html). The
+article](/blog/2015/12/hello-concurrent-world.html). The
 `{%raw%}.detach(){%endraw%}` member function is the other option: not waiting
 for the thread to finish.
 
@@ -115,7 +115,7 @@ raises an exception and ends prematurely.
 Acknowledgment
 --------------
 
-Thanks to **Nino Bašić** for comments and suggestions. Now the post looks more
+Thanks to **Nino Bašić** for comments and suggestions. Now the article looks more
 organized!
 
 Summary
@@ -124,7 +124,7 @@ Summary
 We learned why are the plain threads dangerous and how to make them safer with a 
 `{%raw%}Guard{%endraw%}` class.
 
-In the next blog post, we will look how to pass an argument to a thread. 
+In the next article, we will look how to pass an argument to a thread. 
 
 
 

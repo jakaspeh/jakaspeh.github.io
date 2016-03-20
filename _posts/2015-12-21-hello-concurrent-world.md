@@ -119,7 +119,7 @@ We used threads to write our first concurrent program. But using plain threads i
 considered a bad programming practice. However, my opinion is that it is good to
 know them because they are a basic building block of concurrent programs. 
 
-In the next posts we will describe how to pass a function with arguments to a
+In the next articles we will describe how to pass a function with arguments to a
 thread and investigate why are the plain threads dangerous. 
 
 Links: 

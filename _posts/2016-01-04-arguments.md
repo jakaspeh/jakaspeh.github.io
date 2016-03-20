@@ -160,7 +160,7 @@ We learned how to pass an argument to a function, which will run in a separate
 thread. The `{%raw%}std::ref{%endraw%}` is used for passing a reference to a
 variable.
 
-In the next blog post, we will investigate why is the output of the final
+In the next article, we will investigate why is the output of the final
 program strange -- in concurrent language: we will explore data races.
 
 Links:
